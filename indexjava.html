@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="JS/style.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <title> Tarea Javascript Parte 1</title>
+</head>
+<body>
+      <h1> Ejercicio 1 </h1>
+
+      <form>
+          <label> Ingrese Metros:</label>
+          <input type="number" id="met"> <br><br>
+          <button type="button" onclick="Distanciametros()">
+          Ver informacion solicitada </button> <br><br>
+
+          <script>
+             function  Distanciametros() {
+                 var Metros = document.getElementById('met').value;
+
+                 if(Metros<1000) {
+                     alert("La distancia : "+Metros+" es para Pie");
+                 }
+                 else if(Metros<=10000) {
+                     alert("La distancia :"+Metros+" es para bicicleta");
+                 }
+                 else if(Metros<30000) {
+                     alert("La distancia : "+Metros+" es para Colectivo");
+                 }
+                 else  if(Metros>100000){
+                     alert("La distancia :"+Metros+" es para un Avion");
+                 }
+                 else {
+                     alert("La distancia :"+Metros+" es para que te vayas a la chingada");
+                 }
+             }
+          </script>
+
+
+    
+    </form>
+</body>
+</html>
